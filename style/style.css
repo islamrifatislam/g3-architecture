@@ -142,3 +142,61 @@ margin-top: 30px;
   margin-left: 330px;
   
 }
+.icont-1 {
+  margin-top: 50px;
+  width: 240px;
+  height: 240px;
+  border: 1px solid yellow;
+  display: flex;
+  flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 15px;
+}    
+.icon{
+  margin-left: 340px;
+  display: flex;
+  flex-direction: row;
+  gap: 70px;
+}
+.our-sponsors-section {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.our-sponsor h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.our-sponsor p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 40px;
+  line-height: 1.5;
+}
+
+.sponsor-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.sponsor-logos img {
+  height: 40px;
+  object-fit: contain;
+  opacity: 0.8;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.sponsor-logos img:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+.amazon{
+  margin-top: 20px;
+}
