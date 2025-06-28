@@ -135,7 +135,97 @@ margin-top: 30px;
   color: #FF900E;
   font-size: 26px;
   font-weight: bold;
+
 }
+/*  */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 40px;
+}
+
+.content-left {
+    flex: 1;
+    max-width: 50%;
+    padding-right: 20px;
+}
+
+.content-right {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-right img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.intro-paragraph {
+    font-size: 1.1em;
+    margin-bottom: 40px;
+    color: #666;
+}
+
+.feature-item {
+    margin-bottom: 30px;
+}
+
+.feature-item h3 {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.feature-item p {
+    font-size: 1em;
+    color: #555;
+}
+
+.experience-box {
+    background-color: #f7b731;
+    color: #fff;
+    padding: 30px 40px;
+    border-radius: 8px;
+    display: inline-block;
+    text-align: center;
+    margin-top: 40px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  margin-left: 350px;
+}
+
+.experience-box .years {
+    font-size: 3.5em;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 5px;
+}
+
+.experience-box .label {
+    font-size: 1.2em;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
 /* some fact */
 .some{
   margin-top: 40px;
@@ -199,4 +289,92 @@ gap: 15px;
 }
 .amazon{
   margin-top: 20px;
+}
+/* footer secton done */
+.footer {
+  width: 1140px;
+  height: 100px;
+  background-color: #ad9d8a;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;     
+  justify-content: center; 
+}
+/* responsive design */
+@media (max-width: 768px) {
+  .head {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .brand-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .img {
+    width: 100%;
+    height: auto;
+    padding: 0 10px;
+  }
+
+  .img-title {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    width: 100%;
+    height: auto;
+  }
+
+  .img-text {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+  }
+
+  .content-left,
+  .content-right {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .experience-box {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+  }
+
+  .some {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .icon {
+    margin-left: 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .icont-1 {
+    width: 200px;
+    height: 200px;
+  }
+
+  .footer {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
 }
